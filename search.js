@@ -24,7 +24,7 @@ function searchFiles(dir, filter, pattern) {
     return results;
 }
 
-const dir = 'd:/Anurag lms/Anurag lms/src';
-const filter = f => f.endsWith('.tsx') || f.endsWith('.ts') || f.endsWith('.jsx') || f.endsWith('.js');
-const pattern = 'Revit Architecture';
+const dir = 'd:/Anurag lms/Anurag lms';
+const filter = f => !f.includes('node_modules') && !f.includes('.git') && !f.includes('.next');
+const pattern = '<<<<<<<';
 console.log(searchFiles(dir, filter, pattern));
